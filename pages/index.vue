@@ -29,7 +29,7 @@ export default {
   justify-content: center
   align-items: center
   text-align: center
-  background: url('/bg1.png') no-repeat center center fixed
+  background: url('/static/bg1.png') no-repeat center center fixed
   background-size: cover
 .links
   padding-top: 15px

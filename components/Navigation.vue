@@ -1,6 +1,6 @@
 <template>
   <nav class="top-nav">
-    <a href="/food">Food</a>
+    <a href="food">Food</a>
     <a>Potions</a>
     <a>Ethos</a>
     <a>Moments</a>

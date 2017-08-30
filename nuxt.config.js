@@ -27,6 +27,7 @@ module.exports = {
   ** Build configuration
   */
   build: {
+    publicPath: '/static/',
     /*
     ** Run ESLINT on save
     */
