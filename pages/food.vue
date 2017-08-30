@@ -1,8 +1,13 @@
 <template>
   <section class="container">
-    <h1>Food</h1>
+    <food/>
   </section>
 </template>
 
-<style lang="stylus" scoped>
-</style>
+<script>
+import Food from '~/content/food.vue'
+
+export default {
+  components: { Food }
+}
+</script>

@@ -1,8 +1,13 @@
 <template>
   <section class="container">
-    <h1>Ethos</h1>
+    <ethos/>
   </section>
 </template>
 
-<style lang="stylus" scoped>
-</style>
+<script>
+import Ethos from '~/content/ethos.vue'
+
+export default {
+  components: { Ethos }
+}
+</script>

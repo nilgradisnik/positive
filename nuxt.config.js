@@ -5,6 +5,9 @@ module.exports = {
   router: {
     base: 'gh-pages' === process.env.NODE_ENV ? '/positive/' : '/'
   },
+  modules: [
+    '@nuxtjs/markdownit'
+  ],
 
   /*
   ** Headers of the page

@@ -1,8 +1,13 @@
 <template>
   <section class="container">
-    <h1>Potions</h1>
+    <potions/>
   </section>
 </template>
 
-<style lang="stylus" scoped>
-</style>
+<script>
+import Potions from '~/content/potions.vue'
+
+export default {
+  components: { Potions }
+}
+</script>

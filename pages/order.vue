@@ -1,8 +1,15 @@
 <template>
   <section class="container">
-    <h1>Order</h1>
+    <order/>
   </section>
 </template>
 
-<style lang="stylus" scoped>
-</style>
+<script>
+import Order from '~/content/order.vue'
+
+export default {
+  components: {
+    Order
+  }
+}
+</script>

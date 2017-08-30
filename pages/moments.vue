@@ -1,8 +1,13 @@
 <template>
   <section class="container">
-    <h1>Moments</h1>
+    <moments/>
   </section>
 </template>
 
-<style lang="stylus" scoped>
-</style>
+<script>
+import Moments from '~/content/moments.vue'
+
+export default {
+  components: { Moments }
+}
+</script>
