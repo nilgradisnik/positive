@@ -1,9 +1,7 @@
 <template>
-  <section class="container">
+  <section class="container bg1">
     <navigation/>
-    <div>
-      <logo/>
-    </div>
+    <logo/>
     <social/>
   </section>
 </template>
@@ -24,14 +22,5 @@ export default {
 
 <style lang="stylus">
 .container
-  min-height: 100vh
-  display: flex
-  justify-content: center
-  align-items: center
-  text-align: center
-  background: url('/static/bg1.png') no-repeat center center fixed
-  background-size: cover
-.links
-  padding-top: 15px
-
+  background-color: rgba(37,37,46,0.47)
 </style>

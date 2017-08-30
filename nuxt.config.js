@@ -1,15 +1,16 @@
-const base = 'gh-pages' === process.env.NODE_ENV ? '/positive/' : '/';
+
+const webpack = require('webpack')
 
 module.exports = {
   router: {
-    base,
+    base: 'gh-pages' === process.env.NODE_ENV ? '/positive/' : '/'
   },
 
   /*
   ** Headers of the page
   */
   head: {
-    title: 'positive',
+    title: 'Positive',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -40,6 +41,17 @@ module.exports = {
           exclude: /(node_modules)/
         })
       }
-    }
+    },
+    plugins: [
+      new webpack.LoaderOptionsPlugin({
+        options: {
+          stylus: {
+            preferPathResolver: 'webpack',
+            import: ['~nib/lib/nib/index.styl', '~assets/mixins.styl', '~assets/common.styl']
+          },
+          context: '/'
+        }
+      })
+    ]
   }
 }

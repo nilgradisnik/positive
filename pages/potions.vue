@@ -1,6 +1,6 @@
 <template>
   <section class="container">
-    <h1>Food</h1>
+    <h1>Potions</h1>
   </section>
 </template>
 

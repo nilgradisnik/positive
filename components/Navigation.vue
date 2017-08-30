@@ -1,15 +1,15 @@
 <template>
-  <nav class="top-nav">
+  <nav>
     <a href="food">Food</a>
-    <a>Potions</a>
-    <a>Ethos</a>
-    <a>Moments</a>
-    <a>Order</a>
+    <a href="potions">Potions</a>
+    <a href="ethos">Ethos</a>
+    <a href="moments">Moments</a>
+    <a href="order">Order</a>
   </nav>
 </template>
 
-<style lang="stylus">
-.top-nav
+<style lang="stylus" scoped>
+nav
   display: flex
   flex: 1
   position: absolute
