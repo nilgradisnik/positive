@@ -15,7 +15,7 @@ html
   -webkit-font-smoothing: antialiased
   box-sizing: border-box
 
-h1
+h1, h2, h3, h4
   text-transform: uppercase
   letter-spacing: 2px
 
@@ -29,11 +29,24 @@ a
 .container
   min-height: 100vh
   display: flex
-  justify-content: center
-  align-items: center
-  text-align: center
+  padding: 40px 30px
   background-repeat: no-repeat
   background-position: center center
   background-size: cover
-  &.bg1
-    retina-image('bg1.png')
+  &.center
+    padding: 0
+    justify-content: center
+    align-items: center
+    text-align: center
+  &.md
+    h1
+      margin-bottom: 20px
+      + p
+        font-weight: 500
+        line-height: 32px
+    h2
+      margin: 38px 0 28px 0
+      font-weight: normal
+      font-size: 14px
+      + p
+        font-size: 14px

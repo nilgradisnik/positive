@@ -1,5 +1,5 @@
 <template>
-  <section class="container">
+  <section class="container md">
     <moments/>
   </section>
 </template>

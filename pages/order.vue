@@ -1,5 +1,5 @@
 <template>
-  <section class="container">
+  <section class="container md">
     <order/>
   </section>
 </template>

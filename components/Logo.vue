@@ -18,5 +18,4 @@
     font-size: 16px
     letter-spacing: 2px
     text-transform: uppercase
-
 </style>

@@ -1,5 +1,5 @@
 <template>
-  <nav>
+  <nav class="header-nav">
     <a class="icn_food" href="food">Food</a>
     <a class="icn_potions" href="potions">Potions</a>
     <a class="icn_ethos" href="ethos">Ethos</a>
@@ -8,12 +8,12 @@
   </nav>
 </template>
 
-<style lang="stylus" scoped>
+<style lang="stylus">
 nav-icons = icn_food,
             icn_potions,
             icn_ethos,
             icn_order
-nav
+.header-nav
   display: flex
   flex: 1
   position: absolute

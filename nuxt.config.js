@@ -8,6 +8,9 @@ module.exports = {
   modules: [
     '@nuxtjs/markdownit'
   ],
+  css: [
+    '@/assets/normalize.css'
+  ],
 
   /*
   ** Headers of the page
