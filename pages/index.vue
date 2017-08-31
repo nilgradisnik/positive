@@ -1,5 +1,5 @@
 <template>
-  <section class="container center" :class="bgClass">
+  <section class="container center" ref="container">
     <navigation/>
     <logo/>
     <social/>
@@ -20,10 +20,8 @@ export default {
     Logo
   },
 
-  data () {
-    return {
-      bgClass: `bg${bgs[getRandomInt(0, bgs.length)]}`
-    }
+  mounted () {
+    this.$refs.container.className += ` bg${bgs[getRandomInt(0, bgs.length)]}`
   }
 }
 
