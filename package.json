@@ -11,7 +11,7 @@
     "generate": "nuxt generate",
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
     "precommit": "npm run lint",
-    "predeploy": "npm run optimize; NODE_ENV=gh-pages nuxt generate",
+    "predeploy": "NODE_ENV=gh-pages nuxt generate",
     "optimize": "find static/ -iname '*png' | while read line; do pngcrush -ow $line; done",
     "deploy": "gh-pages -d ./dist -b gh-pages -m \"Github Pages $(date +%Y-%m-%d) deployment\""
   },
