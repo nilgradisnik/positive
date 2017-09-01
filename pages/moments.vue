@@ -1,13 +1,13 @@
 <template>
   <section class="container md">
-    <moments/>
+    <moments-index class="content index show"/>
   </section>
 </template>
 
 <script>
-import Moments from '~/content/moments.vue'
+import MomentsIndex from '~/content/moments/index.vue'
 
 export default {
-  components: { Moments }
+  components: { MomentsIndex }
 }
 </script>

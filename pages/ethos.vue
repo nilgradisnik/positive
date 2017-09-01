@@ -1,13 +1,13 @@
 <template>
   <section class="container md">
-    <ethos/>
+    <ethos-index class="content index show"/>
   </section>
 </template>
 
 <script>
-import Ethos from '~/content/ethos.vue'
+import EthosIndex from '~/content/ethos/index.vue'
 
 export default {
-  components: { Ethos }
+  components: { EthosIndex }
 }
 </script>

@@ -8,7 +8,7 @@
   Transparent communication
   Enviromentally friendly
 
-  ## Empathy through conversation
+  #### Empathy through conversation
 
   We want to make our customers feel great, by shaping delightful nutrition experiences that stimulate the senses before, during and after the meal, without stimulating any other body part. We make it a priority to talk to and understand our customers better than any other company.
 </template>

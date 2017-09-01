@@ -1,15 +1,15 @@
 <template>
   <section class="container md">
-    <order/>
+    <order-index class="content index show"/>
   </section>
 </template>
 
 <script>
-import Order from '~/content/order.vue'
+import OrderIndex from '~/content/order/index.vue'
 
 export default {
   components: {
-    Order
+    OrderIndex
   }
 }
 </script>

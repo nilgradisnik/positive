@@ -21,14 +21,12 @@ export default {
   },
 
   mounted () {
-    this.$refs.container.className += ` bg${bgs[getRandomInt(0, bgs.length)]}`
+    this.$refs.container.className += ` bg${bgs[getRandomInt(bgs.length)]}`
   }
 }
 
-function getRandomInt (min, max) {
-  min = Math.ceil(min)
-  max = Math.floor(max)
-  return Math.floor(Math.random() * (max - min)) + min
+function getRandomInt (max) {
+  return Math.floor(Math.random() * Math.floor(max))
 }
 </script>
 
@@ -36,7 +34,6 @@ function getRandomInt (min, max) {
 index-bgs = bg1, bg2, bg4, bg5, bg6, bg7, bg8
 
 .container
-  background-color: rgba(37,37,46,0.47)
   for bg in index-bgs
     &.{bg}
       retina-image(bg + '.png')

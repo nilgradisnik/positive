@@ -1,13 +1,13 @@
 <template>
   <section class="container md">
-    <potions/>
+    <potions-index class="content index show"/>
   </section>
 </template>
 
 <script>
-import Potions from '~/content/potions.vue'
+import PotionsIndex from '~/content/potions/index.vue'
 
 export default {
-  components: { Potions }
+  components: { PotionsIndex }
 }
 </script>

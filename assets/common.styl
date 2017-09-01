@@ -33,18 +33,38 @@ a
   background-repeat: no-repeat
   background-position: center center
   background-size: cover
+  justify-content: center
+  .container
+    > section
+      display: none
+      &.show
+        display: block
   &.center
     padding: 0
-    justify-content: center
     align-items: center
     text-align: center
-  &.md
-    h1
-      margin-bottom: 20px
-      + p
-        font-weight: 500
-        line-height: 32px
-    h2
+.md
+  > section
+    max-width: 375px
+    display: none
+    &.show
+      display: block
+.content
+  padding: 30px
+  color: white
+  h1, h2
+    margin-bottom: 20px
+  ul
+    padding: 10px
+  li
+    line-height: 16px
+    font-size: 12px
+  &.index
+    color: black
+    h1 + p
+      font-weight: 500
+      line-height: 32px
+    h4
       margin: 38px 0 28px 0
       font-weight: normal
       font-size: 14px
