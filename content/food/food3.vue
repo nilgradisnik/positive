@@ -6,3 +6,9 @@
   - sesame - ginger & black garlic squash "noodles"
   - matcha green tea mochi
 </template>
+
+<style lang="stylus">
+.food3
+  retina-image('food3.png')
+  background-color rgba(51,53,51,1)
+</style>

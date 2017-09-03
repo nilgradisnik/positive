@@ -1,10 +1,10 @@
 <template>
   <markdown-content>
     <page0 class="content index"/>
-    <page1 class="content food food1"/>
-    <page2 class="content food food2"/>
-    <page3 class="content food food3"/>
-    <page4 class="content food food4"/>
+    <page1 class="content food1"/>
+    <page2 class="content food2"/>
+    <page3 class="content food3"/>
+    <page4 class="content food4"/>
   </markdown-content>
 </template>
 
@@ -28,21 +28,3 @@ export default {
   }
 }
 </script>
-
-<style lang="stylus">
-.food
-  background-repeat: no-repeat
-  background-position: bottom
-  &.food1
-    retina-image('food1.png')
-    background-color: rgba(27,61,69,1)
-  &.food2
-    retina-image('food2.png')
-    background-color rgba(10,23,40,1)
-  &.food3
-    retina-image('food3.png')
-    background-color rgba(51,53,51,1)
-  &.food4
-    retina-image('food4.png')
-    background-color rgba(140,160,161,1)
-</style>
