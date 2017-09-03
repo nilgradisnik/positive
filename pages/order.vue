@@ -1,15 +1,18 @@
 <template>
-  <section class="container md">
-    <order-index class="content index show"/>
-  </section>
+  <markdown-content>
+    <page0 class="content index"/>
+  </markdown-content>
 </template>
 
 <script>
-import OrderIndex from '~/content/order/index.vue'
+import MarkdownContent from '~/components/MarkdownContent.vue'
+
+import Page0 from '~/content/order/index.vue'
 
 export default {
   components: {
-    OrderIndex
+    MarkdownContent,
+    Page0
   }
 }
 </script>

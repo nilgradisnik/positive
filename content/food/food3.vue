@@ -10,5 +10,5 @@
 <style lang="stylus">
 .food3
   retina-image('food3.png')
-  background-color rgba(51,53,51,1)
+  background-color: rgba(51,53,51,1)
 </style>

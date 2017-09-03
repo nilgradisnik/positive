@@ -1,13 +1,18 @@
 <template>
-  <section class="container md">
-    <potions-index class="content index show"/>
-  </section>
+  <markdown-content>
+    <page0 class="content index"/>
+  </markdown-content>
 </template>
 
 <script>
-import PotionsIndex from '~/content/potions/index.vue'
+import MarkdownContent from '~/components/MarkdownContent.vue'
+
+import Page0 from '~/content/potions/index.vue'
 
 export default {
-  components: { PotionsIndex }
+  components: {
+    MarkdownContent,
+    Page0
+  }
 }
 </script>

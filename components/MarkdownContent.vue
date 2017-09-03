@@ -17,20 +17,18 @@ export default {
   mounted () {
     this.$nextTick(() => {
       this.clientWidth = this.$el.clientWidth
-      this.children = this.$refs.cmd.children
-      this.maxIndex = this.children.length - 1
+      this.maxIndex = this.$refs.cmd.children.length - 1
 
       const index = parseInt(window.location.hash.substr(1), 10)
       if (index && index <= this.maxIndex) this.pageIndex = index
 
-      this.children[this.pageIndex].style.display = 'block'
+      this.showPage()
     })
   },
 
   methods: {
     onNavigation (e) {
-      const navigateNext = e.clientX > (this.clientWidth / 3)
-      if (navigateNext) {
+      if (e.clientX > (this.clientWidth / 3)) {
         if (this.pageIndex === this.maxIndex) this.pageIndex = 0
         else this.pageIndex++
       } else {
@@ -40,10 +38,16 @@ export default {
 
       window.location.hash = '#' + this.pageIndex
 
+      this.hideAll()
+      this.showPage()
+    },
+    hideAll () {
       for (var i = 0; i <= this.maxIndex; i++) {
-        this.children[i].style.display = 'none'
+        this.$refs.cmd.children[i].style.display = 'none'
       }
-      this.children[this.pageIndex].style.display = 'block'
+    },
+    showPage () {
+      this.$refs.cmd.children[this.pageIndex].style.display = 'flex'
     }
   }
 }
